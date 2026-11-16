@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+  // Set the theme before first paint to avoid a flash of the wrong theme.
+  // Mirrors the same key/logic script.js uses for the toggle, kept in sync.
+  (function () {
+    try {
+      var stored = localStorage.getItem("rahul-portfolio-theme");
+      if (stored !== "light") document.documentElement.setAttribute("data-theme", "dark");
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Re:Trace — Case Study | Vamasamudram Rahul</title>
+<meta name="description" content="Case study: Re:Trace, a NASA Space Apps Challenge 2026 educational storytelling platform about NASA equipment on the Moon and Mars, developed by Vamasamudram Rahul.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<button class="menu-toggle" id="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+  <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+</button>
+
+<div class="menu-panel" id="menu-panel" aria-hidden="true">
+  <button class="menu-close" id="menu-close" type="button" aria-label="Close menu">
+    <span class="menu-icon is-close" aria-hidden="true"><span></span><span></span><span></span></span>
+  </button>
+  <div class="menu-panel-inner">
+    <div class="menu-top">
+      <span>RAHUL - Portfolio</span>
+      <div class="menu-utility">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false">Dark</button>
+        <a href="../assets/resume/Vamasamudram-Rahul-Resume.pdf" target="_blank" rel="noopener noreferrer">
+  Resume
+</a>
+      </div>
+    </div>
+<nav class="menu-nav" aria-label="Primary">
+      <a href="../index.html#home">home.</a>
+      <a href="../index.html#about">about.</a>
+      <a href="../index.html#experience">experience.</a>
+      <a href="../index.html#projects">projects.</a>
+      <a href="../index.html#skills">skills.</a>
+      <a href="../index.html#learning">learning.</a>
+      <a href="../index.html#contact">contact.</a>
+    </nav>
+    <div class="menu-bottom">
+      <div class="menu-social">
+        <a href="mailto:vamasamudramrahul@gmail.com" aria-label="Email Rahul">
+          <img src="../assets/images/email.png" alt="" class="social-icon-img">
+        </a>
+        <a href="https://www.linkedin.com/in/rahul-vamasamudram-27652a417/" target="_blank" rel="noopener noreferrer" aria-label="Open Rahul's LinkedIn profile">
+          <img src="../assets/images/linkedin.png" alt="" class="social-icon-img">
+        </a>
+        <a href="https://github.com/vamasamudramrahul-cmyk" target="_blank" rel="noopener noreferrer" aria-label="Open Rahul's GitHub profile">
+          <img src="../assets/images/github.png" alt="" class="social-icon-img">
+        </a>
+        <a href="https://wa.me/919121840380" target="_blank" rel="noopener noreferrer" aria-label="Message Rahul on WhatsApp">
+          <img src="../assets/images/whatsapp.png" alt="" class="social-icon-img">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="case-header">
+    <div class="container">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+      <h1 class="case-title">Re:Trace</h1>
+      <div class="case-meta">
+        <span>NASA Space Apps Challenge 2026 / In Development</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>Re:Trace is an educational storytelling and exploration platform developed for the NASA Space Apps Challenge 2026 challenge, “Abandoned but not Forgotten: Storytelling about NASA's Discarded Equipment on the Moon and Mars.” It focuses on the equipment behind space exploration and the stories that can be overlooked when attention is placed only on spacecraft, missions, and major discoveries.</p>
+      <p>The platform is being designed to help visitors explore NASA equipment associated with the Moon and Mars through mission context, equipment histories, technical information, scientific contributions, timelines, status classifications, and supporting evidence.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>The Problem</h2>
+      <p>Information about space-exploration equipment is spread across mission archives, technical documents, image collections, and historical records. It can be difficult for students and general audiences to understand what individual pieces of equipment did, why they were sent, what they contributed, and what is known about their present status.</p>
+      <p>Re:Trace addresses this discovery and storytelling challenge by organizing equipment-centred information into a connected, educational experience.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>The Approach</h2>
+      <p>The project is organized around two destinations — the Moon and Mars — and a shared equipment-discovery experience. Rather than treating the end of a mission as proof that every associated item was abandoned, the research process distinguishes equipment status from mission status and requires evidence for classifications.</p>
+      <div class="flow-diagram" style="margin-top: var(--space-4);">
+        <span class="step">Moon</span><span class="sep">+</span>
+        <span class="step">Mars</span><span class="sep">→</span>
+        <span class="step">Equipment Records</span><span class="sep">→</span>
+        <span class="step">Evidence-led Stories</span>
+      </div>
+      <p style="margin-top: var(--space-4);">The content workflow separates screen-specific information requirements, equipment identity management, research, independent verification, approval, and website integration. This helps keep records consistent across different parts of the experience.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Website Experience</h2>
+      <div class="two-col">
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: var(--space-2);">Destination Exploration</h3>
+          <p>Moon and Mars destination experiences organize equipment around their exploration context and mission families.</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: var(--space-2);">Full Equipment Details</h3>
+          <p>Equipment records are structured around overview, story, purpose, construction, discoveries, mission timeline, current status and location, and images or media.</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: var(--space-2);">Discovery Tools</h3>
+          <p>The planned experience includes an equipment library, filters, comparison, recently viewed items, glossary, and quiz.</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: var(--space-2);">Evidence and Learning</h3>
+          <p>About and evidence content explains the project's research approach and helps visitors trace historical claims to their sources.</p>
+        </div>
+      </div>
+      <p style="margin-top: var(--space-4); color: var(--text-secondary); font-size: 0.9rem;">These describe the project's planned and evolving website experience; they are not a claim that every module is complete or deployed.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Research and Accuracy</h2>
+      <p>Re:Trace follows a NASA-focused research approach, prioritizing official NASA, Jet Propulsion Laboratory, NSSDC, Planetary Data System, and NASA History Office material. Equipment identity, mission association, technical specifications, timelines, status, and location are treated as claims that need supporting evidence.</p>
+      <ul>
+        <li>Use official and traceable sources for factual claims.</li>
+        <li>Keep unknown or unsupported values null rather than guessing.</li>
+        <li>Separate equipment status from overall mission status.</li>
+        <li>Distinguish abandoned, inactive, lost, retired, crashed, decommissioned, and operational classifications.</li>
+        <li>Keep verified historical information separate from interpretation and creative storytelling.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>My Work and Tools</h2>
+      <p>Re:Trace involves project planning, screen and data-structure design, research coordination, evidence review, and website development. The project workflow uses AI-assisted tools including ChatGPT, Claude, and AWS Quick as part of the planning and development process.</p>
+      <p>The established website direction uses HTML, CSS, vanilla JavaScript, and JSON-based data, with a lightweight client-side structure.</p>
+      <p>Specific individual responsibilities and implementation contributions should be updated to match the work completed by the portfolio owner and the project team.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Challenges</h2>
+      <ul>
+        <li>Finding reliable historical evidence for equipment-level stories.</li>
+        <li>Distinguishing equipment identity and status from the wider mission outcome.</li>
+        <li>Keeping technical details, timelines, and sources consistent across multiple screens.</li>
+        <li>Designing reusable Moon and Mars experiences while keeping their information distinct.</li>
+        <li>Turning complex mission history into accessible educational content without oversimplifying the facts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="case-section" style="border-bottom: none;">
+    <div class="container">
+      <h2>What This Project Demonstrates</h2>
+      <ul>
+        <li>Research-driven product development</li>
+        <li>Information architecture and screen planning</li>
+        <li>Structured data and content modelling</li>
+        <li>Evidence-based storytelling and fact checking</li>
+        <li>Educational experience design</li>
+        <li>Collaborative use of AI-assisted development tools</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="next-project">
+    <div class="container">
+      <p>Next project</p>
+      <a href="bikergram.html">Bikergram Website →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Rahul Vamasamudram.</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
